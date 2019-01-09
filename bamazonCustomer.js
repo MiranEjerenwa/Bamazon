@@ -81,9 +81,9 @@ function order() {
         else {
         //if enough inventory
         var newQuantity = productInfo.stock_quantity - orderQuantity;
-        console.log(orderQuantity);
+        console.log('Ordering total quantity: ' + ' ' + orderQuantity);
         console.log(productInfo.Stock_quantity);
-        console.log(newQuantity);
+        console.log('Quantity now available in Stock:' + ' ' + newQuantity);
         connection.query("UPDATE product SET ? WHERE ?", [{
         stock_quantity: newQuantity},
         {
