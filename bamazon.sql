@@ -26,16 +26,16 @@ CREATE TABLE product (
 );
 
 -- Populate this database with around 10 different products. (i.e. Insert "mock" data rows into this database and table).
-INSERT INTO product(product_name, department_name, price, stock_quantity) 
-  VALUES ('Camera','Electronics', 99.50, 10),
-		 ('Dell - 19" Laptop', 'Electronics', 799.00, 50),
-		 ('Radar Detector', 'Electronics', 159.99, 10),
-		 ('Private Advisor', 'Books', 11.45, 785),
-		 ('Synthetic Engine Oil 5W-40 1 Quart','Auto',7.99 ,20),
-		 ('Windshield Wiper driver side','Auto', 15.99, 100),
-		 ('Frozen Toy set', 'Entertainment', 69.99, 210),
-		 ('Monopoly Board Game', 'Entertainment', 14.99, 15),
-		 ('Riding Lawn Mower', 'Home Goods', 999.00, 11),
-		 ('Paint bucket', 'Home Goods', 5.99, 35);
+INSERT INTO product(item_id, product_name, department_name, price, stock_quantity) 
+  VALUES (item_id,'Camera','Electronics', 99.50, 10),
+		 (item_id,'Dell - 19" Laptop', 'Electronics', 799.00, 50),
+		 (item_id,'Radar Detector', 'Electronics', 159.99, 10),
+		 (item_id,'Private Advisor', 'Books', 11.45, 785),
+		 (item_id,'Synthetic Engine Oil 5W-40 1 Quart','Auto',7.99 ,20),
+		 (item_id,'Windshield Wiper driver side','Auto', 15.99, 100),
+		 (item_id,'Frozen Toy set', 'Entertainment', 69.99, 210),
+		 (item_id,'Monopoly Board Game', 'Entertainment', 14.99, 15),
+		 (item_id,'Riding Lawn Mower', 'Home Goods', 999.00, 11),
+		 (item_id,'Paint bucket', 'Home Goods', 5.99, 35);
 
 SELECT * FROM product;
